@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+    <header>Food Finder</header>
+  
+    <label for="TypeName"> Type: </label>
+    <input type="text" id= "TypeName" width="%"><br><br>
+    
+ 
+    <label for="CalorieNum"> Calories: </label>
+    <input type="range" min="0" max="200" value="25" class="slider" oninput= "calorienum()" id="calorieSlider"><br><br>
+    <p id="calorienum"> </p>
+
+    <label for="ProteinNum"> Protein: </label>
+    <input type="range" min="0" max="25" value="25" class="slider"oninput= "proteinNum()" id="protein"><br><br>
+    <p id="proteinum"> </p>
+
+    <div class="outputBox">
+		  <p id="output">  </p>
+    </div> 
+
+
+    <button onclick="printRace(document.getElementById('TypeName').value, document.getElementById('calorie').value, document.getElementById('protein').value)">
+	  </button>
+	  
+  <br><br>
+	 <img src="run.png" width="65%">
+  
+
+
+</center>
+</body>
+
+</html>
+
+
