@@ -54,17 +54,6 @@ document.getElementById("output").innerHTML = matches.join("<br><br>");
 //this creates line breaks into the results 
 }
 
-//prints 
-function distanceNum(){
-   document.getElementById("distanceShow").innerHTML = document.getElementById("distance").value;
-   console.log(document.getElementById("distance").value);
-}
-//these two are the sliders for the app... the one on top is a slider for distance and the bottom is for elevation
-function elevationNum(){
-   document.getElementById("elevationNum").innerHTML = document.getElementById("elevation").value;
-   
-}
-
 
   //next you will use function calls and get columns..
 
@@ -87,12 +76,12 @@ function elevationNum(){
 
 
 function calorienum(){
-  document.getElementById("calorienum").innerHTML = document.getElementById("calorie").value;
-  console.log(document.getElementById("calorie").value);
+  document.getElementById("calorieShow").innerHTML = document.getElementById("calorieSlider").value;
+  console.log(document.getElementById("calorieSlider").value);
 }
 //these two are the sliders for the app... the one on top is a slider for distance and the bottom is for elevation
-function elevationNum(){
-  document.getElementById("elevationNum").innerHTML = document.getElementById("elevation").value;
+function proteinnum(){
+  document.getElementById("proteinShow").innerHTML = document.getElementById("proteinSlider").value;
+  console.log(document.getElementById("porteinSlider").value);
   
 }
-
