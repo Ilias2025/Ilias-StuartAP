@@ -5,47 +5,67 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <center>
-    <header>Ultra Trail Races</header>
-  
-    <label for="Country"> Country: </label>
-    <input type="text" id= "Country" width="%"><br><br>
+    <header>Food Finder</header>
+  <br>
+    <select class="dropdown" id = "division">
+      <!-- <button>EAST</button> -->
+      <!-- <div class="content"> -->
+        <center>
+          <option >FOOD TYPE</option>
+          <option >Biscuit</option>
+          <option >Bread</option>
+          <option >Breakfast Sandwich</option>
+          <option >Burger</option>
+         <option >Burrito/Taco/Quesadilla</option>
+         <option >Chinese</option>
+         <option >Fried Chicken</option>
+         <option >Fries</option>
+         <option >Ice Cream</option>
+        <option >Latino</option>
+        <option >Nachos</option>
+        <option >Pancake</option>
+        <option >Pizza</option>
+        <option >	Salad</option>
+        <option >Sandwich</option>
+        <option >	Sushi</option>
+        <option >Waffle</option>
+         </center>
+      <!-- </div> -->
+    </select>
+  </br>
     
- 
-    <label for="Distance"> Distance: </label>
+ <!-- calorienum is the function call -->
+    <label for="calorieSlider"> Calories: </label>   
+    <input type="range" min="0" max="200" value="25" class="slider" oninput= "calorienum()"  id="calorieSlider"><br><br>
+    <p id="calorieShow"> </p>
 
-    <input type="range" min="0" max="200" value="25" class="slider" oninput= "distanceNum()" id="distance"><br><br>
-    <p id="distanceShow"> </p>
-
-    <label for="Elevation"> Elevation: </label>
-    <input type="range" min="0" max="12000" value="25" class="slider"oninput= "elevationNum()" id="elevation"><br><br>
-    <p id="elevationNum"></p>
-
+    <label for="proteinSlider"> Protein: </label>
+    <input type="range" min="0" max="25" value="25" class="slider"oninput= "proteinnum()" id="proteinSlider"><br><br>
+    <p id="proteinShow"> </p>
 
     <div class="outputBox">
 		  <p id="output">  </p>
-    </div>
-
-   
-    <button onclick="printRace(document.getElementById('Country').value, document.getElementById('elevation').value, document.getElementById('distance').value)">
-      Get Results
-    </button>
-    
-<br><br>
-   <img src="run.png" width="65%">
+    </div> 
 
 
-   <script src="utils.js"></script>
-   <script src="script.js"></script>
- 
+    <button onclick="(document.getElementById('TypeName').value, document.getElementById('calorie').value, document.getElementById('protein').value)">
+	  </button>
+	  
+  <br><br>
+	
+  
+<script src="script.js"></script>
+
 </center>
 </body>
 
 </html>
+
