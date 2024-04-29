@@ -14,7 +14,8 @@
 <body>
   <center>
     <header>Food Finder</header>
-  <br>
+  
+    <br>
     <select class="dropdown" id = "division">
       <!-- <button>EAST</button> -->
       <!-- <div class="content"> -->
@@ -41,13 +42,14 @@
       <!-- </div> -->
     </select>
   </br>
-    
  <!-- calorienum is the function call -->
     <label for="calorieSlider"> Calories: </label>   
+
     <input type="range" min="0" max="200" value="25" class="slider" oninput= "calorienum()"  id="calorieSlider"><br><br>
     <p id="calorieShow"> </p>
 
     <label for="proteinSlider"> Protein: </label>
+
     <input type="range" min="0" max="25" value="25" class="slider"oninput= "proteinnum()" id="proteinSlider"><br><br>
     <p id="proteinShow"> </p>
 
